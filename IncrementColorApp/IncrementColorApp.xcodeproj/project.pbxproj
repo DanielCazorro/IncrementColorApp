@@ -7,13 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CD980FB2B57BFB000ECF2E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CD980FA2B57BFB000ECF2E3 /* LaunchScreen.storyboard */; };
 		5D1C67B52B4D96190013B764 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1C67B42B4D96190013B764 /* AppDelegate.swift */; };
 		5D1C67B72B4D96190013B764 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1C67B62B4D96190013B764 /* SceneDelegate.swift */; };
 		5D1C67BE2B4D961A0013B764 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D1C67BD2B4D961A0013B764 /* Assets.xcassets */; };
-		5D1C67CC2B4D961B0013B764 /* IncrementColorAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1C67CB2B4D961B0013B764 /* IncrementColorAppTests.swift */; };
-		5D1C67D62B4D961B0013B764 /* IncrementColorAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1C67D52B4D961B0013B764 /* IncrementColorAppUITests.swift */; };
-		5D1C67D82B4D961B0013B764 /* IncrementColorAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1C67D72B4D961B0013B764 /* IncrementColorAppUITestsLaunchTests.swift */; };
-		5D1C67E62B4D96FB0013B764 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1C67E42B4D96FB0013B764 /* MainViewModel.swift */; };
+		5D1C67E62B4D96FB0013B764 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1C67E42B4D96FB0013B764 /* MainViewController.swift */; };
 		5D1C67E72B4D96FB0013B764 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D1C67E52B4D96FB0013B764 /* MainView.xib */; };
 /* End PBXBuildFile section */
 
@@ -35,17 +33,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2CD980FA2B57BFB000ECF2E3 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D1C67B12B4D96190013B764 /* IncrementColorApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IncrementColorApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D1C67B42B4D96190013B764 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D1C67B62B4D96190013B764 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5D1C67BD2B4D961A0013B764 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D1C67C22B4D961A0013B764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D1C67C72B4D961B0013B764 /* IncrementColorAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IncrementColorAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D1C67CB2B4D961B0013B764 /* IncrementColorAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementColorAppTests.swift; sourceTree = "<group>"; };
 		5D1C67D12B4D961B0013B764 /* IncrementColorAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IncrementColorAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D1C67D52B4D961B0013B764 /* IncrementColorAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementColorAppUITests.swift; sourceTree = "<group>"; };
-		5D1C67D72B4D961B0013B764 /* IncrementColorAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementColorAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		5D1C67E42B4D96FB0013B764 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		5D1C67E42B4D96FB0013B764 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		5D1C67E52B4D96FB0013B764 /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +70,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CD980FC2B57BFF400ECF2E3 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				2CD980FA2B57BFB000ECF2E3 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
 		2CDD7F3C2B4DA1A10053920C /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,20 +87,18 @@
 			path = "Viewç";
 			sourceTree = "<group>";
 		};
-		2CDD7F3D2B4DA1B00053920C /* ViewModel */ = {
+		2CDD7F3D2B4DA1B00053920C /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				5D1C67E42B4D96FB0013B764 /* MainViewModel.swift */,
+				5D1C67E42B4D96FB0013B764 /* MainViewController.swift */,
 			);
-			path = ViewModel;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		5D1C67A82B4D96190013B764 = {
 			isa = PBXGroup;
 			children = (
 				5D1C67B32B4D96190013B764 /* IncrementColorApp */,
-				5D1C67CA2B4D961B0013B764 /* IncrementColorAppTests */,
-				5D1C67D42B4D961B0013B764 /* IncrementColorAppUITests */,
 				5D1C67B22B4D96190013B764 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -114,7 +116,8 @@
 		5D1C67B32B4D96190013B764 /* IncrementColorApp */ = {
 			isa = PBXGroup;
 			children = (
-				2CDD7F3D2B4DA1B00053920C /* ViewModel */,
+				2CD980FC2B57BFF400ECF2E3 /* LaunchScreen */,
+				2CDD7F3D2B4DA1B00053920C /* ViewController */,
 				2CDD7F3C2B4DA1A10053920C /* View */,
 				5D1C67C22B4D961A0013B764 /* Info.plist */,
 				5D1C67B42B4D96190013B764 /* AppDelegate.swift */,
@@ -122,23 +125,6 @@
 				5D1C67BD2B4D961A0013B764 /* Assets.xcassets */,
 			);
 			path = IncrementColorApp;
-			sourceTree = "<group>";
-		};
-		5D1C67CA2B4D961B0013B764 /* IncrementColorAppTests */ = {
-			isa = PBXGroup;
-			children = (
-				5D1C67CB2B4D961B0013B764 /* IncrementColorAppTests.swift */,
-			);
-			path = IncrementColorAppTests;
-			sourceTree = "<group>";
-		};
-		5D1C67D42B4D961B0013B764 /* IncrementColorAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				5D1C67D52B4D961B0013B764 /* IncrementColorAppUITests.swift */,
-				5D1C67D72B4D961B0013B764 /* IncrementColorAppUITestsLaunchTests.swift */,
-			);
-			path = IncrementColorAppUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CD980FB2B57BFB000ECF2E3 /* LaunchScreen.storyboard in Resources */,
 				5D1C67BE2B4D961A0013B764 /* Assets.xcassets in Resources */,
 				5D1C67E72B4D96FB0013B764 /* MainView.xib in Resources */,
 			);
@@ -273,7 +260,7 @@
 			files = (
 				5D1C67B52B4D96190013B764 /* AppDelegate.swift in Sources */,
 				5D1C67B72B4D96190013B764 /* SceneDelegate.swift in Sources */,
-				5D1C67E62B4D96FB0013B764 /* MainViewModel.swift in Sources */,
+				5D1C67E62B4D96FB0013B764 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +268,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D1C67CC2B4D961B0013B764 /* IncrementColorAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,8 +275,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D1C67D82B4D961B0013B764 /* IncrementColorAppUITestsLaunchTests.swift in Sources */,
-				5D1C67D62B4D961B0013B764 /* IncrementColorAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
