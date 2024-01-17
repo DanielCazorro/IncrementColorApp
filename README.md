@@ -6,9 +6,11 @@ Esta es una aplicación sencilla que muestra un número que se incrementa cada v
 
 Aquí se muestran algunas capturas de pantalla de la aplicación:
 
-<img src= "https://github.com/DanielCazorro/IncrementColorApp/blob/main/Screenshots/Screenshot1.png" width="300">
-<img src= "https://github.com/DanielCazorro/IncrementColorApp/blob/main/Screenshots/Screenshot2.png" width="300">
-<img src= "https://github.com/DanielCazorro/IncrementColorApp/blob/main/Screenshots/Screenshot3.png" width="300">
+<div style="display: flex; justify-content: space-between;">
+<img src= "https://github.com/DanielCazorro/IncrementColorApp/blob/main/Screenshots/Screenshot1.png" width="150"style="margin-right: 10px;">
+<img src= "https://github.com/DanielCazorro/IncrementColorApp/blob/main/Screenshots/Screenshot2.png" width="150"style="margin-right: 10px;">
+<img src= "https://github.com/DanielCazorro/IncrementColorApp/blob/main/Screenshots/Screenshot3.png" width="150"style="margin-right: 10px;">
+</div>
 
 ## Funcionalidades
 
