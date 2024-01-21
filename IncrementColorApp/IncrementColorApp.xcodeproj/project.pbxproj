@@ -112,8 +112,7 @@
 			children = (
 				5D1C67E52B4D96FB0013B764 /* MainView.xib */,
 			);
-			name = View;
-			path = "Viewç";
+			path = View;
 			sourceTree = "<group>";
 		};
 		2CDD7F3D2B4DA1B00053920C /* ViewController */ = {
