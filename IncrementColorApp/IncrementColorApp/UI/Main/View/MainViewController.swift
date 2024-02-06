@@ -36,6 +36,11 @@ class MainViewController: UIViewController, MainViewModelDelegate {
     }
     
     //MARK: - Functions
+    
+    func set(viewModel: MainViewModel) {
+        self.viewModel = viewModel
+    }
+    
     // Creamos una función que genere un color
     func generateRandomColor() -> UIColor {
         let red = CGFloat.random(in: 0...1)

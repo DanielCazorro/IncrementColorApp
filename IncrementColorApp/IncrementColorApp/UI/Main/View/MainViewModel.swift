@@ -13,9 +13,17 @@ class MainViewModel  {
     // Delegado para la comunicación con el ViewController
     weak var delegate: MainViewModelDelegate?
     
+    private var dataManager: MainViewDataManager
+    
     // Aquí creamos una variable number inicializada a cero, para que cada vez que cerremos y abramos la app vuelva a este valor.
     /// Variable que mostramos en pantalla y va variando al pulsar el botón
     private var number = 0
+    
+    init(delegate: MainViewModelDelegate? = nil, dataManager: MainViewDataManager, number: Int = 0) {
+        self.delegate = delegate
+        self.dataManager = dataManager
+        self.number = number
+    }
     
     // MARK: - Public Methods
     /// Aumenta el valor de la variable number en 1, además cambia el color de fondo de pantalla
