@@ -17,32 +17,33 @@ protocol MainViewModelDelegate: AnyObject {
 class MainViewController: UIViewController, MainViewModelDelegate {
     
     // MARK: - Properties
-    private var viewModel = MainViewModel()
+    // Instancia del ViewModel que maneja la lógica de la vista
+    private var viewModel = MainViewModel(dataManager: MainViewDataManager())
     
     // MARK: - IBOutlet
+    // IBOutlet para el label que muestra el número
     @IBOutlet weak var numberLabel: UILabel!
     
     //MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Asignamos el ViewController como delegado del ViewModel
         viewModel.delegate = self
         
     }
     
     //MARK: - IBAction
-    // Esta es la acción de pulsar el botón, dentro pondremos el código que queremos realizar
+    
+    // Método llamado cuando se pulsa el botón
     @IBAction func IncreaseButtonPush(_ sender: Any) {
+        // Llamamos al método del ViewModel para incrementar el número
         viewModel.increaseNumber()
     }
     
     //MARK: - Functions
-    // Creamos una función que genere un color
-    func generateRandomColor() -> UIColor {
-        let red = CGFloat.random(in: 0...1)
-        let green = CGFloat.random(in: 0...1)
-        let blue = CGFloat.random(in: 0...1)
-        
-        return UIColor(red: red, green: green, blue: blue, alpha: 1.0)
+    
+    func set(viewModel: MainViewModel) {
+        self.viewModel = viewModel
     }
     
     // MARK: - MainViewModelDelegate Methods
