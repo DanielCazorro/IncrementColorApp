@@ -116,6 +116,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		2CF4ED6B2B725B61002F2FE5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5D1C67B42B4D96190013B764 /* AppDelegate.swift */,
+				5D1C67B62B4D96190013B764 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		5D1C67A82B4D96190013B764 = {
 			isa = PBXGroup;
 			children = (
@@ -137,10 +146,9 @@
 		5D1C67B32B4D96190013B764 /* IncrementColorApp */ = {
 			isa = PBXGroup;
 			children = (
+				2CF4ED6B2B725B61002F2FE5 /* App */,
 				2C2A7A1C2B5A61170051946C /* UI */,
 				5D1C67C22B4D961A0013B764 /* Info.plist */,
-				5D1C67B42B4D96190013B764 /* AppDelegate.swift */,
-				5D1C67B62B4D96190013B764 /* SceneDelegate.swift */,
 				5D1C67BD2B4D961A0013B764 /* Assets.xcassets */,
 			);
 			path = IncrementColorApp;

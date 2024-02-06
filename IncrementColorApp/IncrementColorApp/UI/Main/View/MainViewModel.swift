@@ -17,19 +17,20 @@ class MainViewModel  {
     
     // Aquí creamos una variable number inicializada a cero, para que cada vez que cerremos y abramos la app vuelva a este valor.
     /// Variable que mostramos en pantalla y va variando al pulsar el botón
-    private var number = 0
+    //private var number = 0
     
-    init(delegate: MainViewModelDelegate? = nil, dataManager: MainViewDataManager, number: Int = 0) {
+    init(delegate: MainViewModelDelegate? = nil, dataManager: MainViewDataManager) {
         self.delegate = delegate
         self.dataManager = dataManager
-        self.number = number
+        //self.number = number
     }
     
     // MARK: - Public Methods
     /// Aumenta el valor de la variable number en 1, además cambia el color de fondo de pantalla
     func increaseNumber() {
-        number += 1
-        delegate?.updateNumberLabel(with: number)
+        dataManager.number += 1
+        delegate?.updateNumberLabel(with: dataManager.number)
+        
         
         let randomColor = generateRandomColor()
         delegate?.updateBackgroundColor(with: randomColor)

@@ -8,5 +8,5 @@
 import Foundation
 
 class MainViewDataManager {
-    
+    var number = 0
 }

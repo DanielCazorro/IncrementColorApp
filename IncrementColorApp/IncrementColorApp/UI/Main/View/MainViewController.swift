@@ -17,7 +17,7 @@ protocol MainViewModelDelegate: AnyObject {
 class MainViewController: UIViewController, MainViewModelDelegate {
     
     // MARK: - Properties
-    private var viewModel = MainViewModel()
+    private var viewModel = MainViewModel(dataManager: MainViewDataManager())
     
     // MARK: - IBOutlet
     @IBOutlet weak var numberLabel: UILabel!
@@ -39,15 +39,6 @@ class MainViewController: UIViewController, MainViewModelDelegate {
     
     func set(viewModel: MainViewModel) {
         self.viewModel = viewModel
-    }
-    
-    // Creamos una función que genere un color
-    func generateRandomColor() -> UIColor {
-        let red = CGFloat.random(in: 0...1)
-        let green = CGFloat.random(in: 0...1)
-        let blue = CGFloat.random(in: 0...1)
-        
-        return UIColor(red: red, green: green, blue: blue, alpha: 1.0)
     }
     
     // MARK: - MainViewModelDelegate Methods
