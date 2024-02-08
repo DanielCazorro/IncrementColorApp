@@ -1,6 +1,6 @@
 # IncrementColorApp
 
-Esta es una aplicación sencilla que muestra un número que se incrementa cada vez que se presiona un botón, y cambia el color de fondo a uno aleatorio. MVC
+Esta es una aplicación sencilla que muestra un número que se incrementa cada vez que se presiona un botón, y cambia el color de fondo a uno aleatorio.
 UPDATE: Actualizada arquitectura a MVVM
 
 
